@@ -11,9 +11,9 @@ Projeto desenvolvendo uma API por camadas:
 
 ![layers](src/img/layers.PNG)
 
-> ### O que foi visto?
+> ### Conteúdo Abordado
 
-| Abordagens durante o projeto |
+| O que foi visto? |
 | ---------------------------- |
 | Arquitetura em camadas       |
 | Injeção de dependência       |
