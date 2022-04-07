@@ -18,5 +18,6 @@ Projeto desenvolvendo uma API por camadas:
 | Arquitetura em camadas       |
 | Injeção de dependência       |
 | Acesso a dados: Entity Framework Core |
+| Mapeamento para DB com Entity Framework Core |
 | Fluent Validation            |
 | Repository Pattern           |
