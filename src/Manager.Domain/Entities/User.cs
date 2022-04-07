@@ -1,4 +1,5 @@
-﻿using Manager.Domain.Validators;
+﻿using Manager.Core.Exceptions;
+using Manager.Domain.Validators;
 using System.Collections.Generic;
 
 namespace Manager.Domain.Entities
@@ -46,7 +47,7 @@ namespace Manager.Domain.Entities
                 foreach (var error in validation.Errors)               
                     _errors.Add(error.ErrorMessage);
 
-                throw new System.Exception("Erro validação dominio usuário"); 
+                throw new DomainException("Erro validação dominio usuário", _errors); 
             }
 
             return true;

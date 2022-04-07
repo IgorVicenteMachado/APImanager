@@ -18,8 +18,8 @@ namespace Manager.Domain.Validators
                 .WithMessage("Name cannot be empty")
                 .MinimumLength(2)
                 .WithMessage("Name must be at least 2 characters.")
-                .MaximumLength(80)
-                .WithMessage("Password must be a maximum of 100 characters.");
+                .MaximumLength(100)
+                .WithMessage("Name must be a maximum of 100 characters.");
 
             RuleFor(x => x.Password)
                 .NotNull()
