@@ -5,10 +5,11 @@ Projeto desenvolvendo uma API por camadas:
 
 `Camada de Dominio:` Entidades (bem como seus métodos, comportamentos e propriedades) da aplicação.
 
-`Camada de Serviços:` Define as regras de negócio
+`Camada de Serviços:` Define as regras de negócio.
 
-`Camada de Infraestrutura:` lida com persistência no banco de dados
+`Camada de Infraestrutura:` lida com persistência no banco de dados.
 
+![layers](img/layers.PNG)
 
 > ### O que foi visto?
 
