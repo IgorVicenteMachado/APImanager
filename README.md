@@ -18,7 +18,7 @@ Projeto desenvolvendo uma API por camadas:
 | Arquitetura em camadas       |
 | Injeção de dependência       |
 | Acesso a dados: Entity Framework Core |
-| <a href="docs/01-Documentação de Contexto.md">Mapeamento DB com Entity framework core</a> |
+| <a href="src/Manager.Infra/Mappings/UserMap.cs">Mapeamento DB com Entity framework core</a> |
 | <a href="https://github.com/IgorVicenteMachado/APImanager/blob/infra/src/Manager.Infra/Mappings/UserMap.cs">Mapeamento DB com Entity framework core</a> |
 | Fluent Validation            |
 | Repository Pattern           |
