@@ -9,7 +9,7 @@ Projeto desenvolvendo uma API por camadas:
 
 `Camada de Infraestrutura:` lida com persistência no banco de dados.
 
-![layers](img/layers.PNG)
+![layers](src/img/layers.PNG)
 
 > ### O que foi visto?
 
