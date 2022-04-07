@@ -15,10 +15,10 @@ Projeto desenvolvendo uma API por camadas:
 
 | O que foi visto? |
 | ---------------------------- |
-| <a href=" "> exemplo </a>    |
 | Arquitetura em camadas       |
-| Injeção de dependência       |
-| Acesso a dados: Entity Framework Core | 
+| <a href=" "> Injeção de dependência </a>    |
+| <a href="src/Manager.Infra/Context/ManagerContext.cs"> Acesso a dados: Entity Framework Core </a>    |
 | <a href="src/Manager.Infra/Mappings/UserMap.cs">Mapeamento DB com Entity framework core</a> |
 | <a href="src/Manager.Domain/Validators/UserValidator.cs"> Fluent Validation </a> |
 | <a href="src/Manager.Infra/Repositories"> Repository Pattern   </a> |
+| <a href=" "> tópico </a>    |
