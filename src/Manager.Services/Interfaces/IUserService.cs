@@ -6,13 +6,13 @@ namespace Manager.Services.Interfaces
 {
     public interface IUserService
     {
-        Task<UserDTO> Create (UserDTO userDTO);
-        Task<UserDTO> Update (UserDTO userDTO);
-        Task Remove (long id);
-        Task<UserDTO> Get(long id);
-        Task<List<UserDTO>> GetAll();
-        Task<List<UserDTO>> SearchByName(string name);
-        Task<List<UserDTO>> SearchByEmail(string email);
-        Task<List<UserDTO>> GetByEmail(string email);
+        Task<UserDTO> CreateAsync (UserDTO userDTO);
+        Task<UserDTO> UpdateAsync (UserDTO userDTO);
+        Task RemoveAsync (long id);
+        Task<UserDTO> GetAsync(long id);
+        Task<List<UserDTO>> GetAllAsync();
+        Task<List<UserDTO>> SearchByNameAsync(string name);
+        Task<List<UserDTO>> SearchByEmailAsync(string email);
+        Task<UserDTO> GetByEmailAsync(string email);
     }
 }

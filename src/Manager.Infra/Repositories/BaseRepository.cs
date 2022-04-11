@@ -47,7 +47,7 @@ namespace Manager.Infra.Repositories
         {
             var obj = await GetAsync(id);
 
-            if(obj == null)
+            if(obj != null)
             {
                 _context.Remove(obj);
                 await _context.SaveChangesAsync();

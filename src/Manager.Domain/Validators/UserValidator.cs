@@ -13,7 +13,7 @@ namespace Manager.Domain.Validators
 
             RuleFor(x => x.Name)
                 .NotNull()
-                .WithMessage("Name required")
+                .WithMessage("Name is required")
                 .NotEmpty()
                 .WithMessage("Name cannot be empty")
                 .MinimumLength(2)
@@ -23,7 +23,7 @@ namespace Manager.Domain.Validators
 
             RuleFor(x => x.Password)
                 .NotNull()
-                .WithMessage("Password required.")
+                .WithMessage("Password is required.")
                 .NotEmpty()
                 .WithMessage("this fild cannot be empty.")
                 .MinimumLength(6)
@@ -33,7 +33,7 @@ namespace Manager.Domain.Validators
 
             RuleFor(x => x.Email)
               .NotNull()
-              .WithMessage("E-mail required.")
+              .WithMessage("E-mail is required.")
               .NotEmpty()
               .WithMessage("E-mail cannot be empty.")
               .MinimumLength(10)

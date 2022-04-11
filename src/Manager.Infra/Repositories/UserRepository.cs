@@ -13,6 +13,7 @@ namespace Manager.Infra.Repositories
         private readonly ManagerContext _context;
         public UserRepository(ManagerContext context) : base(context)
         {
+            _context = context;
         }
 
         public async Task<User> GetByEmailAsync(string email)
