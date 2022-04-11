@@ -6,7 +6,7 @@ namespace Manager.Domain.Entities
     {
         internal List<string> _errors;
         public IReadOnlyCollection<string> Errors => _errors;
-        public long Id { get; set; }       
+        public long Id { get; private set; }       
         public abstract bool Validate();
     }
 

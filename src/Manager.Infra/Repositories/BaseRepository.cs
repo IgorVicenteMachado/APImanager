@@ -17,14 +17,14 @@ namespace Manager.Infra.Repositories
             _context = context;
         }
 
-        public async Task<T> Create(T obj)
+        public async Task<T> CreateAsync(T obj)
         {
             _context.Add(obj);
             await _context.SaveChangesAsync();
             return obj;
         }
 
-        public async Task<T> Get(long id)
+        public async Task<T> GetAsync(long id)
         {
             var obj = await _context
                 .Set<T>()
@@ -35,7 +35,7 @@ namespace Manager.Infra.Repositories
             return obj.FirstOrDefault();
         }
 
-        public async Task<List<T>> GetAll()
+        public async Task<List<T>> GetAllAsync()
         {
             return await _context
                    .Set<T>()
@@ -43,9 +43,9 @@ namespace Manager.Infra.Repositories
                    .ToListAsync();
         }
 
-        public async Task Remove(long id)
+        public async Task RemoveAsync(long id)
         {
-            var obj = await Get(id);
+            var obj = await GetAsync(id);
 
             if(obj == null)
             {
@@ -54,7 +54,7 @@ namespace Manager.Infra.Repositories
             }
         }
 
-        public async Task<T> Update(T obj)
+        public async Task<T> UpdateAsync(T obj)
         {
             _context.Entry(obj).State = EntityState.Modified;
             await _context.SaveChangesAsync();

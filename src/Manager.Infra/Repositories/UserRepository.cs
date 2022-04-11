@@ -15,7 +15,7 @@ namespace Manager.Infra.Repositories
         {
         }
 
-        public async Task<User> GetByEmail(string email)
+        public async Task<User> GetByEmailAsync(string email)
         {
             var obj = await _context.Users
                 .Where(u => u.Email.ToLower() == email.ToLower())
@@ -25,7 +25,7 @@ namespace Manager.Infra.Repositories
             return obj.FirstOrDefault();
         }
 
-        public async Task<List<User>> SearchByEmail(string email)
+        public async Task<List<User>> SearchByEmailAsync(string email)
         {
             var all = await _context.Users
                   .Where(u => u.Email.ToLower().Contains(email.ToLower()))
@@ -35,7 +35,7 @@ namespace Manager.Infra.Repositories
             return all;
         }
 
-        public async Task<List<User>> SearchByName(string name)
+        public async Task<List<User>> SearchByNameAsync(string name)
         {
             var all = await _context.Users
                  .Where(u => u.Name.ToLower().Contains(name.ToLower()))
