@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Manager.Infra\Manager.Infra.csproj" />
+    <ProjectReference Include="..\Manager.Domain\Manager.Domain.csproj" />
+    <ProjectReference Include="..\Manager.Core\Manager.Core.csproj" />
   </ItemGroup>
 
 </Project>

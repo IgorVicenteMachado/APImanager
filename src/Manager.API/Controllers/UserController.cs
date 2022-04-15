@@ -4,6 +4,7 @@ using Manager.API.ViewModels;
 using Manager.Core.Exceptions;
 using Manager.Services.DTO;
 using Manager.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace Manager.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [Route("/api/v1/users/create")]
         public async Task<IActionResult> CreateAsync([FromBody] CreateUserViewModel userViewModel)
         {
@@ -49,6 +51,7 @@ namespace Manager.API.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         [Route("/api/v1/users/update")]
         public async Task<IActionResult> UpdateAsync([FromBody] UpdateUserViewModel userViewModel)
         {
@@ -74,6 +77,7 @@ namespace Manager.API.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete]
         [Route("api/v1/users/remove/{id}")]
         public async Task<IActionResult> RemoveAsync(long id)
@@ -98,7 +102,7 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         }  
-        
+        [Authorize]
         [HttpGet]
         [Route("api/v1/users/get/{id}")]
         public async Task<IActionResult> GetAsync(long id)
@@ -133,7 +137,7 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         } 
-        
+        [Authorize]
         [HttpGet]
         [Route("api/v1/users/get-all")]
         public async Task<IActionResult> GetAsync()
@@ -158,7 +162,7 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         }
-
+        [Authorize]
         [HttpGet]
         [Route("api/v1/users/get-by-email")]
         public async Task<IActionResult> GetByEmailAsync(string email)
@@ -193,7 +197,7 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         }   
-        
+        [Authorize]
         [HttpGet]
         [Route("api/v1/users/search-by-name")]
         public async Task<IActionResult> SearchByNameAsync(string name)
@@ -228,7 +232,7 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         } 
-        
+        [Authorize]
         [HttpGet]
         [Route("api/v1/users/search-by-email")]
         public async Task<IActionResult> SearchByEmailAsync(string email)
@@ -262,7 +266,5 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMassage());
             }
         }
-
-
     }
 }

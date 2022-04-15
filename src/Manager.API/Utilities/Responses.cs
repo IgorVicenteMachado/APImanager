@@ -35,7 +35,7 @@ namespace Manager.API.Utilities
             };
         }
 
-        public static ResultViewModel UnathorizedErrorMessage()
+        public static ResultViewModel UnauthorizedErrorMessage()
         {
             return new ResultViewModel
             {
