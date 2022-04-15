@@ -23,3 +23,9 @@ Projeto desenvolvendo uma API por camadas:
 | <a href="src/Manager.Infra/Repositories"> Repository Pattern   </a> |
 | <a href="src/Manager.Services/Services/UserService.cs"> AutoMapper : DTO </a>    |
 | <a href=" "> tópico </a>    |
+
+| Utilitários 
+| -------------------------------------------- | 
+| dotnet ef migration add 'nomedamigration'    |
+| dotnet ef update database                    |
+
