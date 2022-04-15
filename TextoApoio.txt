@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "ConnectionStrings": { 
+    "MANAGER_CONNECTION": ""    //user-secrets set "ConnectionStrings:MANAGER_CONNECTION" "*"
+  },
+
+  "Jwt": {
+    "Key": "",                  //user-secrets set "Jwt:Key" "*"
+    "Login": "",                //user-secrets set "Jwt:Login" "*" 
+    "Password": "",             //user-secrets set "Jwt:Password" "*"
+    "HoursToExpire": "1"
+  },
+
+  "AllowedHosts": "*"
+}
