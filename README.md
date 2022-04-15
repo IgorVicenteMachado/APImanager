@@ -26,7 +26,7 @@ Projeto desenvolvendo uma API por camadas:
 
 
 | Comandos | Execução | Docs | Comentários |
-| ----------------------------------------- |
+| ------ | ------- | ------- | -----------| 
 | dotnet ef migration add 'nomedamigration' | cli .net   | <a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli"> Visão geral das migrações: Microsoft </a>   |  ----   |
 | dotnet ef database update    | cli .net  | <a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli"> Visão geral das migrações: Microsoft </a> |   ----      |
 | dotnet user-secrets         |  cli .net  | <a href="https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows"> segredos de aplicativo no desenvolvimento: Microsoft </a>  | ----   |
