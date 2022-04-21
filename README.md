@@ -29,7 +29,7 @@ Projeto desenvolvendo uma API por camadas:
 | ------ | ------- | ------- | -----------| 
 | dotnet ef migrations add 'NomeDaMigration' | cli .net   | <a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli"> Microsoft : Visão geral das migrações  </a>   |  ----   |
 | dotnet ef database update    | cli .net  | <a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli"> Microsoft : Visão geral das migrações </a> |   ----      |
-| dotnet user-secrets         |  cli .net  | <a href="https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows"> Microsoft : segredos de aplicativo no desenvolvimento </a>  | ----   |
+| dotnet user-secrets         |  cli .net  | <a href="https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows"> Microsoft : segredos de aplicativo no desenvolvimento </a>  | Localização Windows: `%APPDATA%\Microsoft\UserSecrets\`   |
 | dotnet user-secrets set "ConnectionStrings:NOMECONEXAO" "Server = localhost,1433; Database=managerAPI; User ID=****; password=**** ;TrustServerCertificate=True" | cli .net |  ----  | retirando string de conexão da aplicação (cód fonte) e estabelecendo-a como segredo de aplicação | 
 
 
