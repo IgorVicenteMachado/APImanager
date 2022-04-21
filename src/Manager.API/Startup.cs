@@ -1,4 +1,5 @@
 using System.Text;
+using EscNet.DependencyInjection.IoC.Cryptography;
 using Manager.API.Token;
 using Manager.API.ViewModels;
 using Manager.Domain.Entities;
@@ -82,10 +83,6 @@ namespace Manager.API
             services.AddScoped<ITokenGenerator, TokenGenerator>();
             #endregion
             
-            // services.AddSwaggerGen(c =>
-            // {
-            //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Manager.API", Version = "v1" });
-            // });
              #region Swagger
 
             services.AddSwaggerGen(c =>
@@ -124,6 +121,10 @@ namespace Manager.API
                 });
             });
 
+            #endregion
+
+            #region Cryptography
+            services.AddRijndaelCryptography(Configuration["Cryptography:Key"]);
             #endregion
         }
 
